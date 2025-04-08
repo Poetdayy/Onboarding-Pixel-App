@@ -1,0 +1,17 @@
+<div class="tracking-block">
+  {%liquid 
+      render 'tracking-settings'
+  %}
+</div>
+
+<script src="{{ 'tracking-cookie.js' | asset_url }}"></script>
+
+{% schema %}
+{
+  "name": "TrackingSettingsBlock",
+  "target": "body",
+  "settings": [
+    
+  ]
+}
+{% endschema %}
